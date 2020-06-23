@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: hsl(177, 87%, 20%);
+    font-size: 2rem;
+    border: 0.1rem solid #a064d1;
+}
+
+body{
+    background: #ddb5b5;
+    color: white;
+}
+
+header{
+    background-color: #c561b4;
+}
+a{
+    color: #9fd4f3;
+}
