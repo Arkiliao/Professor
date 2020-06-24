@@ -6,17 +6,65 @@
 h1{
     color: hsl(177, 87%, 20%);
     font-size: 2rem;
-    border: 0.1rem solid #a064d1;
 }
 
-body{
-    background: #ddb5b5;
-    color: white;
+
+
+#site{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 3rem 3rem 1fr 3rem;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer"
+
+    
+    
 }
 
 header{
-    background-color: #c561b4;
+    grid-area: header;
+    background-color: #fff;
+}
+
+nav{
+    grid-area: nav;
+    background-color: #fff;
+}
+
+main{
+    grid-area: main;
+    background-color: sienna;
+}
+
+aside{
+    grid-area: aside;
+    background-color: tan;
+}
+
+footer{
+    grid-area: footer;
+    background-color: bisque;
+    font-size: 2rem;
 }
 a{
     color: #9fd4f3;
+}
+
+@media (min-width: 600px)and(max-width: 760px{
+    body{
+        font-size: 1.2rem;
+    }
+    #site{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3rem 3rem 1fr 3rem 3rem;
+        grid-template-areas: 
+        "heater"
+        "nav"
+        "main"
+        "aside"
+        "footer"
+    }
 }
