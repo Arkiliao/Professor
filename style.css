@@ -8,20 +8,23 @@ h1{
     font-size: 2rem;
 }
 
+body{
+    background-color: #fff;
+    color: black;
+    font-size: 1.2rem;
+}
 
 
 #site{
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 3rem 3rem 1fr 3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 3rem 1fr 3rem 3rem;
     grid-template-areas:
-    "header header"
-    "nav nav"
-    "main aside"
-    "footer footer"
-
-    
-    
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer"
 }
 
 header{
@@ -53,18 +56,17 @@ a{
     color: #9fd4f3;
 }
 
-@media (min-width: 600px)and(max-width: 760px{
+@media (min-width: 600px){
     body{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     #site{
-        grid-template-columns: 1fr;
-        grid-template-rows: 3rem 3rem 1fr 3rem 3rem;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 3rem 3rem 1fr 3rem;
         grid-template-areas: 
-        "heater"
-        "nav"
-        "main"
-        "aside"
-        "footer"
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer"
     }
 }
